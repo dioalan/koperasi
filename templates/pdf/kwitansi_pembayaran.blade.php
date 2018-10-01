@@ -7,7 +7,7 @@
 	<table>
 		<tr>
 			<td>
-				<table border="" width="100%">
+				<table  border="" width="100%">
 					<tr>
 						<td style="width: 50px;"">
 							<img src="{{ dirname(__DIR__).'/www/assets/pages/img/kopkar.jpg' }}" style="width: 70px">
