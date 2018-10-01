@@ -1,0 +1,11 @@
+/vendor
+/composer.phar
+/*.sublime-*
+/node_modules
+/www/vendor
+/www/data
+/autoload.json
+cache
+srv/data
+.phpintel/
+.DS_Store

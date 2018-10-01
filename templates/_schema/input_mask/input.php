@@ -1,0 +1,1 @@
+<input type="text" class="inputmask <?php echo $class?>" name="<?php echo  $self['name'] ?>"  id="inputmask_<?php echo $self['name'] ?>" value="<?php echo $value ?>"  mask="<?php echo $mask?>" />
