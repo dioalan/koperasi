@@ -25,7 +25,7 @@ class SimpananController extends AppController
 
     public function pdf ($id) {
 
-        var_dump('sasa');exit();
+        // var_dump('sasa');exit();
 
 
         $model_simpanan = Norm::factory('Simpanan')->findOne(array('$id' => $id));

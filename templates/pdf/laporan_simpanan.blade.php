@@ -5,19 +5,28 @@
 </head>
 <?php 
 	$bulan = array(
-	                '01' => 'JANUARI',
-	                '02' => 'FEBRUARI',
-	                '03' => 'MARET',
-	                '04' => 'APRIL',
-	                '05' => 'MEI',
-	                '06' => 'JUNI',
-	                '07' => 'JULI',
-	                '08' => 'AGUSTUS',
-	                '09' => 'SEPTEMBER',
-	                '10' => 'OKTOBER',
-	                '11' => 'NOVEMBER',
-	                '12' => 'DESEMBER',
+	                '1' => 'Januari',
+                    '2' => 'Febuari', 
+                    '3' => 'Maret',
+                    '4' => 'April',
+                    '5' => 'Mei',
+                    '6' => 'Juni',
+                    '7' => 'Juli',
+                    '8' => 'Agustus',
+                    '9' => 'September',
+                    '10' => 'Oktober',
+                    '11' => 'Nopember',
+                    '12' => 'Desember',
 	        );
+	$hari = array(
+					'Sun' => 'Minggu',
+					'Mon' => 'Senin',
+					'Tue' => 'Selasa',
+					'Wed' => 'Rabu',
+					'Thu' => 'Kamis',
+					'Fri' => 'Jumat',
+					'Sat' => 'Sabtu'
+				);
  ?>
 <body style="text-align: center;" >
 	<p style="text-align: center;"><h1>LAPORAN SIMPANAN</h1></p>
@@ -51,7 +60,7 @@
 	</table>
 	<div style="width: 100%">
 		<p style="text-align: center; float: right;">
-			Jakarta, <?php echo date('d').' '.(strtolower($bulan[date('m')])).' '.date('Y') ?> <br>
+			Jakarta, <?php echo $hari[date('D')].' '.date('d').' '.(ucwords(strtolower($bulan[date('m')]))).' '.date('Y') ?> <br>
 			Mengetahui <br><br><br><br><br>
 			Ketua Koperasi
 		</p>

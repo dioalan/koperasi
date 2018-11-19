@@ -1,4 +1,29 @@
 <!DOCTYPE html>
+<?php 
+	$bulan = array(
+	                '1' => 'Januari',
+                    '2' => 'Febuari', 
+                    '3' => 'Maret',
+                    '4' => 'April',
+                    '5' => 'Mei',
+                    '6' => 'Juni',
+                    '7' => 'Juli',
+                    '8' => 'Agustus',
+                    '9' => 'September',
+                    '10' => 'Oktober',
+                    '11' => 'Nopember',
+                    '12' => 'Desember',
+	        );
+	$hari = array(
+					'Sun' => 'Minggu',
+					'Mon' => 'Senin',
+					'Tue' => 'Selasa',
+					'Wed' => 'Rabu',
+					'Thu' => 'Kamis',
+					'Fri' => 'Jumat',
+					'Sat' => 'Sabtu'
+				);
+ ?>
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="{{ Theme::base('css/doc.css') }}">
@@ -11,7 +36,7 @@
 	<title></title>
 </head>
 <body>
-	<table style="width: 100%; font-size: 12px" border="">
+	<table style="width: 100%; font-size: 8pt" border="">
 		<tr>
 			<td style="width: 5px;"">
 				<img src="{{ dirname(__DIR__).'/www/assets/pages/img/kopkar.jpg' }}" style="width: 70px">
@@ -37,14 +62,14 @@
 	</table>
 	<br>
 	<br>
-	<table style="width: 100%; font : bold;">
+	<table style="width: 100%; font-weight: bold;">
 		<tr><td colspan="2" align="center"><?php echo "FORMULIR ANGGOTA KOPERASI KARYAWAN" ; ?></td></tr>
 		<tr><td colspan="2" align="center"><?php echo "PT. SAGARA XINIX SOLUSITAMA"; ?></td></tr>
 	</table>
 	<br>
-	<p  style="padding-left:15px;">Bersama ini Anggota dengan data berikut :</p>
+	<p  style="padding-left:15px; font-size: 10pt">Bersama ini Anggota dengan data berikut :</p>
 	<br>
-	<table style="width: 100%;" border=""  >
+	<table style="width: 100%; font-size: 10pt" border=""  >
 		<tr>
 			<td style="text-align: left; padding-left :115px; width: 30%;">Nama</td>
 			<td style="padding-left:10px;">: <?php echo $collection['first_name']." ".$collection['last_name']; ?></td>
@@ -83,8 +108,8 @@
 		</tr>
 	</table>
 	<br>
-	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Telah memenuhi permohonan masuk menjadi anggota Koperasi Karyawan PT. Sagara Xinix Solusitama dan bersedia memenuhi ketentuan-ketentuan dan persyaratan yang ada, yaitu :</p>
-	<table border="">
+	<p style="font-size: 10pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Telah memenuhi permohonan masuk menjadi anggota Koperasi Karyawan PT. Sagara Xinix Solusitama dan bersedia memenuhi ketentuan-ketentuan dan persyaratan yang ada, yaitu :</p>
+	<table border="" style="font-size: 10pt">
 		<tr>
 			<td>1.</td><td>Anggota harus Karyawan PT. Sagara Xinix Solusitama.</td>
 		</tr>
@@ -102,11 +127,15 @@
 		</tr>
 	</table>
 	<br>
-	<div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pembayaran Simpanan Pokok melalui bagian keuangan pembayar gaji unit kerja.</div>
-	<div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Demikian surat ini dibuat untuk keperluan anggota melakukan login di aplikasi Sistem Pengelolaan data koperasi karyawan PT. Sagara Xinix Solusitama.</div>
-	<table border="" width="100%">
+	<div style="font-size: 10pt"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pembayaran Simpanan Pokok melalui bagian keuangan pembayar gaji unit kerja.</div>
+	<div style="font-size: 10pt"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Demikian surat ini dibuat untuk keperluan anggota melakukan login di aplikasi Sistem Pengelolaan data koperasi karyawan PT. Sagara Xinix Solusitama.</div>
+	<br>
+	<div class="row" style="text-align: right; font-size: 10pt">
+		Jakarta, <?php echo $hari[date('D')].' '.date('d').' '.(ucwords(strtolower($bulan[date('m')]))).' '.date('Y') ?>
+	</div>
+	<table border="" width="100%" style="font-size: 10pt">
 		<tr>
-			<td style="width: 70%; height: 70px"> &nbsp;</td>
+			<td style="margin: 0px!important; width: 70%; height: 90px"> &nbsp;</td>
 			<td style="text-align: center;">Petugas</td>
 		</tr>
 		<tr>

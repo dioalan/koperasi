@@ -16,7 +16,37 @@
 							<img src="{{ dirname(__DIR__).'/www/img/sagara-logo.jpg' }}" style="width: 200px;">
 						</td>
 						<td>
-							Date Transaksi : <?php echo date('d M Y'); ?>
+							<?php 
+								$bulan = array(
+			                    '1' => 'Januari',
+			                    '2' => 'Febuari', 
+			                    '3' => 'Maret',
+			                    '4' => 'April',
+			                    '5' => 'Mei',
+			                    '6' => 'Juni',
+			                    '7' => 'Juli',
+			                    '8' => 'Agustus',
+			                    '9' => 'September',
+			                    '10' => 'Oktober',
+			                    '11' => 'Nopember',
+			                    '12' => 'Desember',
+			                	) ; 
+			                	$hari = array(
+									'Sun' => 'Minggu',
+									'Mon' => 'Senin',
+									'Tue' => 'Selasa',
+									'Wed' => 'Rabu',
+									'Thu' => 'Kamis',
+									'Fri' => 'Jumat',
+									'Sat' => 'Sabtu'
+								);
+
+			                	$day = date('D');
+			                	$date = date('d');
+			                	$month = date('m');
+			                	$year = date('Y');
+			                ?>
+							Tanggal Transaksi : <?php echo $hari[$day].", ".$date." ".$bulan[$month]." ".$year; ?>
 						</td>
 					</tr>
 				</table>
