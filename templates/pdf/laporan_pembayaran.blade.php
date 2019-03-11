@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Laporan Pinjaman</title>
+	<title>Laporan Pembayaran</title>
 </head>
 <?php 
 	$bulan = array(
