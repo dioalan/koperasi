@@ -40,7 +40,7 @@ class WithdrawController extends AppController
         $dompdf->setPaper('A4', 'portait');
         $dompdf->loadHtml($template);
         $dompdf->render();
-        $dompdf->stream('kwitansi_simpanan.pdf', array("Attachment" => false));
+        $dompdf->stream('laporan_withdraw.pdf', array("Attachment" => false));
         exit;
     }
 

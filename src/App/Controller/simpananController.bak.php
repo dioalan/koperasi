@@ -32,7 +32,7 @@ class SimpananController extends AppController
         $dompdf->setPaper('B5', 'landscape');
         $dompdf->loadHtml($template);
         $dompdf->render();
-        $dompdf->stream('kwitansi_simpanan.pdf', array("Attachment" => false));
+        $dompdf->stream('laporan_simpanan.pdf', array("Attachment" => false));
         exit;
     }
 
