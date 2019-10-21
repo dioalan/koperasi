@@ -36,7 +36,7 @@ class DataSimpananController extends AppController
         exit;
     }
 
-        public function update($id)
+    public function update($id)
     {
         try {
             $entry = $this->collection->findOne($id);
