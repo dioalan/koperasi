@@ -1,44 +1,47 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "d5ce3e908eaa4d038067ceead099af46",
-    "content-hash": "45efe3fc7f2a017b1e86bded261ad601",
+    "content-hash": "d0e51221b2952bef99d009a5ca38aad6",
     "packages": [
         {
             "name": "dompdf/dompdf",
-            "version": "v0.8.2",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dompdf/dompdf.git",
-                "reference": "5113accd9ae5d466077cce5208dcf3fb871bf8f6"
+                "reference": "c5310df0e22c758c85ea5288175fc6cd777bc085"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/5113accd9ae5d466077cce5208dcf3fb871bf8f6",
-                "reference": "5113accd9ae5d466077cce5208dcf3fb871bf8f6",
+                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/c5310df0e22c758c85ea5288175fc6cd777bc085",
+                "reference": "c5310df0e22c758c85ea5288175fc6cd777bc085",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
-                "ext-gd": "*",
                 "ext-mbstring": "*",
-                "phenx/php-font-lib": "0.5.*",
-                "phenx/php-svg-lib": "0.3.*",
-                "php": ">=5.4.0"
+                "masterminds/html5": "^2.0",
+                "phenx/php-font-lib": ">=0.5.4 <1.0.0",
+                "phenx/php-svg-lib": ">=0.3.3 <1.0.0",
+                "php": "^7.1 || ^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.8.*",
-                "squizlabs/php_codesniffer": "2.*"
+                "ext-json": "*",
+                "ext-zip": "*",
+                "mockery/mockery": "^1.3",
+                "phpunit/phpunit": "^7.5 || ^8 || ^9",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "suggest": {
+                "ext-gd": "Needed to process images",
+                "ext-gmagick": "Improves image processing performance",
+                "ext-imagick": "Improves image processing performance",
+                "ext-zlib": "Needed for pdf stream compression"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-develop": "0.7-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Dompdf\\": "src/"
@@ -53,21 +56,17 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Ménager",
-                    "email": "fabien.menager@gmail.com"
-                },
-                {
-                    "name": "Brian Sweeney",
-                    "email": "eclecticgeek@gmail.com"
-                },
-                {
-                    "name": "Gabriel Bull",
-                    "email": "me@gabrielbull.com"
+                    "name": "The Dompdf Community",
+                    "homepage": "https://github.com/dompdf/dompdf/blob/master/AUTHORS.md"
                 }
             ],
             "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
             "homepage": "https://github.com/dompdf/dompdf",
-            "time": "2017-11-26 14:49:08"
+            "support": {
+                "issues": "https://github.com/dompdf/dompdf/issues",
+                "source": "https://github.com/dompdf/dompdf/tree/v2.0.1"
+            },
+            "time": "2022-09-22T13:43:41+00:00"
         },
         {
             "name": "filp/whoops",
@@ -125,7 +124,7 @@
                 "whoops",
                 "zf2"
             ],
-            "time": "2015-06-29 05:42:04"
+            "time": "2015-06-29T05:42:04+00:00"
         },
         {
             "name": "guzzle/guzzle",
@@ -218,7 +217,7 @@
                 "web service"
             ],
             "abandoned": "guzzlehttp/guzzle",
-            "time": "2014-01-28 22:29:15"
+            "time": "2014-01-28T22:29:15+00:00"
         },
         {
             "name": "illuminate/container",
@@ -264,7 +263,7 @@
                     "role": "Creator of Laravel"
                 }
             ],
-            "time": "2014-05-22 21:07:57"
+            "time": "2014-05-22T21:07:57+00:00"
         },
         {
             "name": "illuminate/events",
@@ -313,7 +312,7 @@
                     "role": "Creator of Laravel"
                 }
             ],
-            "time": "2014-03-22 20:12:48"
+            "time": "2014-03-22T20:12:48+00:00"
         },
         {
             "name": "illuminate/filesystem",
@@ -361,7 +360,7 @@
                     "role": "Creator of Laravel"
                 }
             ],
-            "time": "2014-03-22 20:12:48"
+            "time": "2014-03-22T20:12:48+00:00"
         },
         {
             "name": "illuminate/support",
@@ -413,7 +412,7 @@
                     "role": "Creator of Laravel"
                 }
             ],
-            "time": "2014-05-30 16:22:08"
+            "time": "2014-05-30T16:22:08+00:00"
         },
         {
             "name": "illuminate/view",
@@ -464,7 +463,76 @@
                     "role": "Creator of Laravel"
                 }
             ],
-            "time": "2014-04-18 15:17:37"
+            "time": "2014-04-18T15:17:37+00:00"
+        },
+        {
+            "name": "masterminds/html5",
+            "version": "2.7.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Masterminds/html5-php.git",
+                "reference": "897eb517a343a2281f11bc5556d6548db7d93947"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/897eb517a343a2281f11bc5556d6548db7d93947",
+                "reference": "897eb517a343a2281f11bc5556d6548db7d93947",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35 || ^5.7.21 || ^6 || ^7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Masterminds\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matt Butcher",
+                    "email": "technosophos@gmail.com"
+                },
+                {
+                    "name": "Matt Farina",
+                    "email": "matt@mattfarina.com"
+                },
+                {
+                    "name": "Asmir Mustafic",
+                    "email": "goetas@gmail.com"
+                }
+            ],
+            "description": "An HTML5 parser and serializer.",
+            "homepage": "http://masterminds.github.io/html5-php",
+            "keywords": [
+                "HTML5",
+                "dom",
+                "html",
+                "parser",
+                "querypath",
+                "serializer",
+                "xml"
+            ],
+            "support": {
+                "issues": "https://github.com/Masterminds/html5-php/issues",
+                "source": "https://github.com/Masterminds/html5-php/tree/2.7.6"
+            },
+            "time": "2022-08-18T16:18:26+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -513,24 +581,27 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2018-07-04 16:31:37"
+            "time": "2018-07-04T16:31:37+00:00"
         },
         {
             "name": "phenx/php-font-lib",
-            "version": "0.5.1",
+            "version": "0.5.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/PhenX/php-font-lib.git",
-                "reference": "760148820110a1ae0936e5cc35851e25a938bc97"
+                "url": "https://github.com/dompdf/php-font-lib.git",
+                "reference": "dd448ad1ce34c63d09baccd05415e361300c35b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PhenX/php-font-lib/zipball/760148820110a1ae0936e5cc35851e25a938bc97",
-                "reference": "760148820110a1ae0936e5cc35851e25a938bc97",
+                "url": "https://api.github.com/repos/dompdf/php-font-lib/zipball/dd448ad1ce34c63d09baccd05415e361300c35b4",
+                "reference": "dd448ad1ce34c63d09baccd05415e361300c35b4",
                 "shasum": ""
             },
+            "require": {
+                "ext-mbstring": "*"
+            },
             "require-dev": {
-                "phpunit/phpunit": "^4.8"
+                "symfony/phpunit-bridge": "^3 || ^4 || ^5"
             },
             "type": "library",
             "autoload": {
@@ -550,32 +621,38 @@
             ],
             "description": "A library to read, parse, export and make subsets of different types of font files.",
             "homepage": "https://github.com/PhenX/php-font-lib",
-            "time": "2017-09-13 16:14:37"
+            "support": {
+                "issues": "https://github.com/dompdf/php-font-lib/issues",
+                "source": "https://github.com/dompdf/php-font-lib/tree/0.5.4"
+            },
+            "time": "2021-12-17T19:44:54+00:00"
         },
         {
             "name": "phenx/php-svg-lib",
-            "version": "v0.3.2",
+            "version": "0.5.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/PhenX/php-svg-lib.git",
-                "reference": "ccc46ef6340d4b8a4a68047e68d8501ea961442c"
+                "url": "https://github.com/dompdf/php-svg-lib.git",
+                "reference": "76876c6cf3080bcb6f249d7d59705108166a6685"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PhenX/php-svg-lib/zipball/ccc46ef6340d4b8a4a68047e68d8501ea961442c",
-                "reference": "ccc46ef6340d4b8a4a68047e68d8501ea961442c",
+                "url": "https://api.github.com/repos/dompdf/php-svg-lib/zipball/76876c6cf3080bcb6f249d7d59705108166a6685",
+                "reference": "76876c6cf3080bcb6f249d7d59705108166a6685",
                 "shasum": ""
             },
             "require": {
-                "sabberworm/php-css-parser": "8.1.*"
+                "ext-mbstring": "*",
+                "php": "^7.1 || ^8.0",
+                "sabberworm/php-css-parser": "^8.4"
             },
             "require-dev": {
-                "phpunit/phpunit": "~5.0"
+                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.5"
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "Svg\\": "src/"
+                "psr-4": {
+                    "Svg\\": "src/Svg"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -590,7 +667,11 @@
             ],
             "description": "A library to read, parse and export to PDF SVG files.",
             "homepage": "https://github.com/PhenX/php-svg-lib",
-            "time": "2018-06-03 10:10:03"
+            "support": {
+                "issues": "https://github.com/dompdf/php-svg-lib/issues",
+                "source": "https://github.com/dompdf/php-svg-lib/tree/0.5.0"
+            },
+            "time": "2022-09-06T12:16:56+00:00"
         },
         {
             "name": "phpoffice/phpexcel",
@@ -648,7 +729,7 @@
                 "xlsx"
             ],
             "abandoned": "phpoffice/phpspreadsheet",
-            "time": "2015-05-01 07:00:55"
+            "time": "2015-05-01T07:00:55+00:00"
         },
         {
             "name": "ramsey/uuid",
@@ -715,7 +796,7 @@
                 "identifier",
                 "uuid"
             ],
-            "time": "2016-03-22 18:20:19"
+            "time": "2016-03-22T18:20:19+00:00"
         },
         {
             "name": "reekoheek/jsonkit",
@@ -757,7 +838,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2014-06-02 13:46:37"
+            "time": "2014-06-02T13:46:37+00:00"
         },
         {
             "name": "reekoheek/norm-fdb",
@@ -793,7 +874,7 @@
                 }
             ],
             "description": "Norm File Database Driver",
-            "time": "2016-03-07 16:32:03"
+            "time": "2016-03-07T16:32:03+00:00"
         },
         {
             "name": "reekoheek/util",
@@ -828,32 +909,37 @@
                 }
             ],
             "description": "PHP util library",
-            "time": "2014-01-02 04:08:44"
+            "time": "2014-01-02T04:08:44+00:00"
         },
         {
             "name": "sabberworm/php-css-parser",
-            "version": "8.1.0",
+            "version": "8.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sabberworm/PHP-CSS-Parser.git",
-                "reference": "850cbbcbe7fbb155387a151ea562897a67e242ef"
+                "reference": "e41d2140031d533348b2192a83f02d8dd8a71d30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sabberworm/PHP-CSS-Parser/zipball/850cbbcbe7fbb155387a151ea562897a67e242ef",
-                "reference": "850cbbcbe7fbb155387a151ea562897a67e242ef",
+                "url": "https://api.github.com/repos/sabberworm/PHP-CSS-Parser/zipball/e41d2140031d533348b2192a83f02d8dd8a71d30",
+                "reference": "e41d2140031d533348b2192a83f02d8dd8a71d30",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2"
+                "ext-iconv": "*",
+                "php": ">=5.6.20"
             },
             "require-dev": {
-                "phpunit/phpunit": "*"
+                "codacy/coverage": "^1.4",
+                "phpunit/phpunit": "^4.8.36"
+            },
+            "suggest": {
+                "ext-mbstring": "for parsing UTF-8 CSS"
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "Sabberworm\\CSS": "lib/"
+                "psr-4": {
+                    "Sabberworm\\CSS\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -866,13 +952,17 @@
                 }
             ],
             "description": "Parser for CSS Files written in PHP",
-            "homepage": "http://www.sabberworm.com/blog/2010/6/10/php-css-parser",
+            "homepage": "https://www.sabberworm.com/blog/2010/6/10/php-css-parser",
             "keywords": [
                 "css",
                 "parser",
                 "stylesheet"
             ],
-            "time": "2016-07-19 19:14:21"
+            "support": {
+                "issues": "https://github.com/sabberworm/PHP-CSS-Parser/issues",
+                "source": "https://github.com/sabberworm/PHP-CSS-Parser/tree/8.4.0"
+            },
+            "time": "2021-12-11T13:40:54+00:00"
         },
         {
             "name": "slim/slim",
@@ -916,7 +1006,7 @@
                 "rest",
                 "router"
             ],
-            "time": "2013-10-31 02:05:09"
+            "time": "2013-10-31T02:05:09+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -979,7 +1069,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26 09:06:28"
+            "time": "2018-07-26T09:06:28+00:00"
         },
         {
             "name": "symfony/finder",
@@ -1026,7 +1116,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2014-09-27 08:35:25"
+            "time": "2014-09-27T08:35:25+00:00"
         },
         {
             "name": "xinix-technology/blade-theme",
@@ -1062,7 +1152,7 @@
                 }
             ],
             "description": "Basic Blade Theme Resolver Class",
-            "time": "2015-09-30 08:33:35"
+            "time": "2015-09-30T08:33:35+00:00"
         },
         {
             "name": "xinix-technology/bono",
@@ -1122,7 +1212,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2016-03-07 16:01:29"
+            "time": "2016-03-07T16:01:29+00:00"
         },
         {
             "name": "xinix-technology/bono-auth",
@@ -1159,7 +1249,7 @@
                 }
             ],
             "description": "Bono Auth",
-            "time": "2015-09-09 11:33:54"
+            "time": "2015-09-09T11:33:54+00:00"
         },
         {
             "name": "xinix-technology/bono-blade",
@@ -1195,7 +1285,7 @@
                 }
             ],
             "description": "Laravel Blade template engine for Bono PHP Framework",
-            "time": "2015-08-31 08:31:28"
+            "time": "2015-08-31T08:31:28+00:00"
         },
         {
             "name": "xinix-technology/dapur-xinix",
@@ -1237,7 +1327,7 @@
                 "source": "https://github.com/xinix-technology/dapur-xinix/tree/master",
                 "issues": "https://github.com/xinix-technology/dapur-xinix/issues"
             },
-            "time": "2017-09-30 10:58:13"
+            "time": "2017-09-30T10:58:13+00:00"
         },
         {
             "name": "xinix-technology/jacket",
@@ -1273,7 +1363,7 @@
                 }
             ],
             "description": "When Bono gets Naked, but use several T-shirt, all his got is Jacket.",
-            "time": "2015-11-18 12:16:51"
+            "time": "2015-11-18T12:16:51+00:00"
         },
         {
             "name": "xinix-technology/migrate",
@@ -1309,7 +1399,7 @@
                 }
             ],
             "description": "Migration tool for bono",
-            "time": "2014-06-20 12:12:49"
+            "time": "2014-06-20T12:12:49+00:00"
         },
         {
             "name": "xinix-technology/norm",
@@ -1363,7 +1453,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2017-12-15 04:39:49"
+            "time": "2017-12-15T04:39:49+00:00"
         }
     ],
     "packages-dev": [],
@@ -1376,5 +1466,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }
