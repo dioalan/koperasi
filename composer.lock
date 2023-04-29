@@ -1,10 +1,9 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "d5ce3e908eaa4d038067ceead099af46",
     "content-hash": "45efe3fc7f2a017b1e86bded261ad601",
     "packages": [
         {
@@ -67,7 +66,7 @@
             ],
             "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
             "homepage": "https://github.com/dompdf/dompdf",
-            "time": "2017-11-26 14:49:08"
+            "time": "2017-11-26T14:49:08+00:00"
         },
         {
             "name": "filp/whoops",
@@ -125,7 +124,7 @@
                 "whoops",
                 "zf2"
             ],
-            "time": "2015-06-29 05:42:04"
+            "time": "2015-06-29T05:42:04+00:00"
         },
         {
             "name": "guzzle/guzzle",
@@ -218,7 +217,7 @@
                 "web service"
             ],
             "abandoned": "guzzlehttp/guzzle",
-            "time": "2014-01-28 22:29:15"
+            "time": "2014-01-28T22:29:15+00:00"
         },
         {
             "name": "illuminate/container",
@@ -264,7 +263,7 @@
                     "role": "Creator of Laravel"
                 }
             ],
-            "time": "2014-05-22 21:07:57"
+            "time": "2014-05-22T21:07:57+00:00"
         },
         {
             "name": "illuminate/events",
@@ -313,7 +312,7 @@
                     "role": "Creator of Laravel"
                 }
             ],
-            "time": "2014-03-22 20:12:48"
+            "time": "2014-03-22T20:12:48+00:00"
         },
         {
             "name": "illuminate/filesystem",
@@ -361,7 +360,7 @@
                     "role": "Creator of Laravel"
                 }
             ],
-            "time": "2014-03-22 20:12:48"
+            "time": "2014-03-22T20:12:48+00:00"
         },
         {
             "name": "illuminate/support",
@@ -413,7 +412,7 @@
                     "role": "Creator of Laravel"
                 }
             ],
-            "time": "2014-05-30 16:22:08"
+            "time": "2014-05-30T16:22:08+00:00"
         },
         {
             "name": "illuminate/view",
@@ -464,7 +463,7 @@
                     "role": "Creator of Laravel"
                 }
             ],
-            "time": "2014-04-18 15:17:37"
+            "time": "2014-04-18T15:17:37+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -513,7 +512,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2018-07-04 16:31:37"
+            "time": "2018-07-04T16:31:37+00:00"
         },
         {
             "name": "phenx/php-font-lib",
@@ -550,7 +549,7 @@
             ],
             "description": "A library to read, parse, export and make subsets of different types of font files.",
             "homepage": "https://github.com/PhenX/php-font-lib",
-            "time": "2017-09-13 16:14:37"
+            "time": "2017-09-13T16:14:37+00:00"
         },
         {
             "name": "phenx/php-svg-lib",
@@ -590,7 +589,7 @@
             ],
             "description": "A library to read, parse and export to PDF SVG files.",
             "homepage": "https://github.com/PhenX/php-svg-lib",
-            "time": "2018-06-03 10:10:03"
+            "time": "2018-06-03T10:10:03+00:00"
         },
         {
             "name": "phpoffice/phpexcel",
@@ -648,7 +647,7 @@
                 "xlsx"
             ],
             "abandoned": "phpoffice/phpspreadsheet",
-            "time": "2015-05-01 07:00:55"
+            "time": "2015-05-01T07:00:55+00:00"
         },
         {
             "name": "ramsey/uuid",
@@ -715,7 +714,7 @@
                 "identifier",
                 "uuid"
             ],
-            "time": "2016-03-22 18:20:19"
+            "time": "2016-03-22T18:20:19+00:00"
         },
         {
             "name": "reekoheek/jsonkit",
@@ -757,7 +756,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2014-06-02 13:46:37"
+            "time": "2014-06-02T13:46:37+00:00"
         },
         {
             "name": "reekoheek/norm-fdb",
@@ -793,7 +792,7 @@
                 }
             ],
             "description": "Norm File Database Driver",
-            "time": "2016-03-07 16:32:03"
+            "time": "2016-03-07T16:32:03+00:00"
         },
         {
             "name": "reekoheek/util",
@@ -828,20 +827,20 @@
                 }
             ],
             "description": "PHP util library",
-            "time": "2014-01-02 04:08:44"
+            "time": "2014-01-02T04:08:44+00:00"
         },
         {
             "name": "sabberworm/php-css-parser",
-            "version": "8.1.0",
+            "version": "8.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sabberworm/PHP-CSS-Parser.git",
-                "reference": "850cbbcbe7fbb155387a151ea562897a67e242ef"
+                "reference": "b3683fba4e30963908265b039190a0e88f74c6fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sabberworm/PHP-CSS-Parser/zipball/850cbbcbe7fbb155387a151ea562897a67e242ef",
-                "reference": "850cbbcbe7fbb155387a151ea562897a67e242ef",
+                "url": "https://api.github.com/repos/sabberworm/PHP-CSS-Parser/zipball/b3683fba4e30963908265b039190a0e88f74c6fb",
+                "reference": "b3683fba4e30963908265b039190a0e88f74c6fb",
                 "shasum": ""
             },
             "require": {
@@ -872,7 +871,11 @@
                 "parser",
                 "stylesheet"
             ],
-            "time": "2016-07-19 19:14:21"
+            "support": {
+                "issues": "https://github.com/sabberworm/PHP-CSS-Parser/issues",
+                "source": "https://github.com/sabberworm/PHP-CSS-Parser/tree/8.1.1"
+            },
+            "time": "2020-06-01T09:09:10+00:00"
         },
         {
             "name": "slim/slim",
@@ -916,7 +919,7 @@
                 "rest",
                 "router"
             ],
-            "time": "2013-10-31 02:05:09"
+            "time": "2013-10-31T02:05:09+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -979,7 +982,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26 09:06:28"
+            "time": "2018-07-26T09:06:28+00:00"
         },
         {
             "name": "symfony/finder",
@@ -1026,7 +1029,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2014-09-27 08:35:25"
+            "time": "2014-09-27T08:35:25+00:00"
         },
         {
             "name": "xinix-technology/blade-theme",
@@ -1062,7 +1065,7 @@
                 }
             ],
             "description": "Basic Blade Theme Resolver Class",
-            "time": "2015-09-30 08:33:35"
+            "time": "2015-09-30T08:33:35+00:00"
         },
         {
             "name": "xinix-technology/bono",
@@ -1122,7 +1125,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2016-03-07 16:01:29"
+            "time": "2016-03-07T16:01:29+00:00"
         },
         {
             "name": "xinix-technology/bono-auth",
@@ -1159,7 +1162,7 @@
                 }
             ],
             "description": "Bono Auth",
-            "time": "2015-09-09 11:33:54"
+            "time": "2015-09-09T11:33:54+00:00"
         },
         {
             "name": "xinix-technology/bono-blade",
@@ -1195,7 +1198,7 @@
                 }
             ],
             "description": "Laravel Blade template engine for Bono PHP Framework",
-            "time": "2015-08-31 08:31:28"
+            "time": "2015-08-31T08:31:28+00:00"
         },
         {
             "name": "xinix-technology/dapur-xinix",
@@ -1237,7 +1240,7 @@
                 "source": "https://github.com/xinix-technology/dapur-xinix/tree/master",
                 "issues": "https://github.com/xinix-technology/dapur-xinix/issues"
             },
-            "time": "2017-09-30 10:58:13"
+            "time": "2017-09-30T10:58:13+00:00"
         },
         {
             "name": "xinix-technology/jacket",
@@ -1273,7 +1276,7 @@
                 }
             ],
             "description": "When Bono gets Naked, but use several T-shirt, all his got is Jacket.",
-            "time": "2015-11-18 12:16:51"
+            "time": "2015-11-18T12:16:51+00:00"
         },
         {
             "name": "xinix-technology/migrate",
@@ -1309,7 +1312,7 @@
                 }
             ],
             "description": "Migration tool for bono",
-            "time": "2014-06-20 12:12:49"
+            "time": "2014-06-20T12:12:49+00:00"
         },
         {
             "name": "xinix-technology/norm",
@@ -1363,7 +1366,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2017-12-15 04:39:49"
+            "time": "2017-12-15T04:39:49+00:00"
         }
     ],
     "packages-dev": [],
@@ -1376,5 +1379,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }
